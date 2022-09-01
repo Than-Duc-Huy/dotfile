@@ -21,17 +21,17 @@ disabled = false
 [username]
 style_user = "bold white"
 style_root = "bold white"
-format = "[$user]($style) "
+format = "[$user]($style) "
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-format = "@[$hostname](bold yellow) "
+format = "[$hostname](bold yellow) "
 disabled = false
 
 [directory]
-truncation_length = 5
+truncation_length = 8
 truncation_symbol = "…/"
 home_symbol = " ~"
 read_only_style = "197"
@@ -41,7 +41,7 @@ format = "[$path]($style)[$read_only]($read_only_style) "
 [git_branch]
 symbol = " "
 format = "[$symbol$branch]($style) "
-truncation_length = 4
+truncation_length = 8
 truncation_symbol = "…/"
 style = "bold green"
 
@@ -61,25 +61,25 @@ renamed = "襁 "
 deleted = " "
 
 [kubernetes]
-format = 'via [ﴱ $context\($namespace\)](bold purple) '
+format = ' [ﴱ $context\($namespace\)](bold purple) '
 disabled = false
 
 # (deactivated because of no space left)
 # 
 [terraform]
-format = "via [ terraform $version]($style) 壟 [$workspace]($style) "
+format = " [ terraform $version]($style) 壟 [$workspace]($style) "
 disabled = true
 
 [vagrant]
-format = "via [ vagrant $version]($style) "
+format = " [ vagrant $version]($style) "
 disabled = true
 
 [docker_context]
-format = "via [ $context](bold blue) "
+format = " [ $context](bold blue) "
 disabled = true
 
 [helm]
-format = "via [ $version](bold purple) "
+format = " [ $version](bold purple) "
 disabled = true
 
 [python]
@@ -88,9 +88,9 @@ python_binary = "python3"
 disabled = true
 
 [nodejs]
-format = "via [ $version](bold green) "
+format = " [ $version](bold green) "
 disabled = true
 
 [ruby]
-format = "via [ $version]($style) "
+format = " [ $version]($style) "
 disabled = true
