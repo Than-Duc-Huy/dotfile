@@ -131,5 +131,6 @@ fi
 
 # Uses starship 
 # curl -sS https://starship.rs/install.sh | sh
+# mv ~/dotfile/starship.toml ~/.config/starship.toml
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
