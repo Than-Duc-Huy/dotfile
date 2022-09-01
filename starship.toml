@@ -8,8 +8,8 @@ $all[╰─](cyan)$character"""
 # 
 # Change the default prompt characters
 [character]
-success_symbol = "[](238)"
-error_symbol = "[](238)"
+success_symbol = "[](cyan)"
+error_symbol = "[](red)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
