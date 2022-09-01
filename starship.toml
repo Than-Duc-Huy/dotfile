@@ -27,7 +27,7 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = "@ [$hostname](bold yellow) "
+format = "@[$hostname](bold yellow) "
 disabled = false
 
 [directory]
@@ -36,11 +36,11 @@ truncation_symbol = "…/"
 home_symbol = " ~"
 read_only_style = "197"
 read_only = "  "
-format = "dir [$path]($style)[$read_only]($read_only_style) "
+format = "[$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
 symbol = " "
-format = "branch [$symbol$branch]($style) "
+format = "[$symbol$branch]($style) "
 # truncation_length = 4
 truncation_symbol = "…/"
 style = "bold green"
