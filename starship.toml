@@ -21,19 +21,21 @@ disabled = false
 [username]
 style_user = "bold white"
 style_root = "bold white"
-format = "[$user]($style) "
+user_symbol = " "
+format = "[$user_symbol$user]($style) "
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-format = "[$hostname](bold yellow) "
+host_symbol = " "
+format = "[$hostname](bold yellow) "
 disabled = false
 
 [directory]
 truncation_length = 8
 truncation_symbol = "…/"
-home_symbol = " ~"
+home_symbol = " ~"
 read_only_style = "197"
 read_only = "  "
 format = "[$path]($style)[$read_only]($read_only_style) "
