@@ -16,8 +16,8 @@ $all$character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = "[](cyan)"
-error_symbol = "[](red)"
+success_symbol = "[](cyan)"
+error_symbol = "[](red)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
