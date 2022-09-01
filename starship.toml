@@ -21,15 +21,15 @@ disabled = false
 [username]
 style_user = "bold white"
 style_root = "bold white"
-user_symbol = " "
-format = "[$user_symbol$user]($style) "
+symbol = " "
+format = "[$symbol$user]($style) "
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-host_symbol = " "
-format = "[$hostname](bold yellow) "
+symbol = " "
+format = "[$symbol$hostname](bold yellow) "
 disabled = false
 
 [directory]
