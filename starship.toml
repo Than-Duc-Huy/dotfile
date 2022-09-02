@@ -16,8 +16,8 @@ $all$character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = "[](cyan)"
-error_symbol = "[](red)"
+success_symbol = "[❯❯❯](cyan)"
+error_symbol = "[❯❯❯](red)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
@@ -67,7 +67,7 @@ modified = " "
 staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
-
+#===========================================================================
 [kubernetes]
 format = ' [ﴱ $context\($namespace\)](bold purple) '
 disabled = false
@@ -81,6 +81,15 @@ disabled = true
 [vagrant]
 format = " [ vagrant $version]($style) "
 disabled = true
+
+[cmake]
+symbol = "△ "
+style = "bold blue"
+version_format = "v${raw}"
+format = "[$symbol($version )]($style)"
+detect_files = ["CMakeLists.txt", "CMakeCache.txt"]
+disabled = false
+
 
 [docker_context]
 format = " [ $context](bold blue) "
