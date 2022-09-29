@@ -1,3 +1,5 @@
+#! /bin/bash
+
 # Move starship.toml file to .config
 cp ~/dotfile/starship.toml ~/.config/starship.toml
 

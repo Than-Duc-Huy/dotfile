@@ -1,4 +1,4 @@
-
+#! /bin/bash
 
 # git clone dotfile in HOME directory
 
