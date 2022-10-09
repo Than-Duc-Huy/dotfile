@@ -2,14 +2,18 @@
 
 # git clone dotfile in HOME directory
 
-# Install Hack font
-curl -L -O https://raw.githubusercontent.com/source-foundry/hack-linux-installer/master/hack-linux-installer.sh
-chmod +x hack-linux-installer.sh
-./hack-linux-installer.sh latest
+# Install Hack Nerd Font
 
+wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
-# Install starship
-yes y | curl -ss https://starship.rs/install.sh | sh
+# Move to the font folder
+mv "Hack Regular Nerd Font Complete.ttf" ~/.local/share/fonts/
 
+# Install Starship
+curl -sS https://starship.rs/install.sh | sh
 
+# Create a soft symlink
+ln -s ~/dotfile/starship.toml ~/.config/starship.toml
 
+# Add this line to .bashrc
+echo "\neval \"\$(starship init bash)\" \n" >> ~/.bashrc
