@@ -35,7 +35,7 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = "[](bold yellow) [$hostname](bold yellow) "
+format = "[ ](bold yellow) [$hostname](bold yellow) "
 disabled = false
 
 [directory]
