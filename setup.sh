@@ -13,6 +13,8 @@ mv "Hack Regular Nerd Font Complete.ttf" ~/.local/share/fonts/
 curl -sS https://starship.rs/install.sh | sh
 
 # Create a soft symlink
+
+rm ~/.config/starship.toml
 ln -s ~/dotfile/starship.toml ~/.config/starship.toml
 
 # Add this line to .bashrc
